@@ -14,7 +14,7 @@ console.log(words.length);
 app.get('/', function(req, res) {
   const gameWord = words[Math.floor((Math.random() * 100000) + 1)];
   console.log(gameWord);
-  res.send('nodegame');
+  res.send('nodegame is the name of this file, but a small text string is all that I have been able to reproduce on heroku. Sad.');
 });
 // return gameWord
 //must connect "./views" ***Must create "views" folder and insert mustache file, which goes to res.render//
