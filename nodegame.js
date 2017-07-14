@@ -14,7 +14,7 @@ console.log(words.length);
 app.get('/', function(req, res) {
   const gameWord = words[Math.floor((Math.random() * 100000) + 1)];
   console.log(gameWord);
-  res.send('Oh, so putting a couple of words on a blank ass screen is supposed to be impressive?? I did it myself, and even I am not impressed. If I had a powerful app to brag about, I would feel very different I am sure. But I do not. So I do not.');
+  res.send('Nodegame');
 });
 // return gameWord
 //must connect "./views" ***Must create "views" folder and insert mustache file, which goes to res.render//
