@@ -25,7 +25,7 @@ app.post('nodegame.mustache', function (){
 });
 
 app.post('/', function(req, res) {
-  res.render('nodegame.mustache');
+  res.render('nodegame.mustache', {node: 'game'});
 });
 app.listen(process.env.PORT || 3000, function() {
   console.log('Connection Established');
