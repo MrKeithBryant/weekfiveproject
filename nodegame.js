@@ -14,7 +14,7 @@ console.log(words.length);
 app.get('/', function(req, res) {
   const gameWord = words[Math.floor((Math.random() * 100000) + 1)];
   console.log(gameWord);
-  res.render('nodegame');
+  res.send('nodegame');
 });
 // return gameWord
 //must connect "./views" ***Must create "views" folder and insert mustache file, which goes to res.render//
@@ -30,7 +30,6 @@ app.post('/', function(req, res) {
 app.listen(process.env.PORT || 3000, function() {
   console.log('Connection Established');
 });
-'<h1>System check<h1>';
 /*
 app.listen(3000, function() {
   console.log("Valid input")
