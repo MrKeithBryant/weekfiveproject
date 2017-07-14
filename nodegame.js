@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const fs = require('fs');
-const words = fs.readFileSync('/usr/share/dict/words', 'utf-8').toLowerCase().split('\n');
+const words = fs.readFileSync('./words', 'utf-8').toLowerCase().split('\n');
 const mustacheExpress = require('mustache-express');
 const bodyParser = require('body-parser');
 app.engine('mustache', mustacheExpress());
