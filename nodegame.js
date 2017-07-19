@@ -20,6 +20,8 @@ app.get('/', function(req, res) {
 //must connect "./views" ***Must create "views" folder and insert mustache file, which goes to res.render//
 //need game logic
 
+
+
 app.post('nodegame.mustache', function (){
 
 });
@@ -28,7 +30,7 @@ app.post('/', function(req, res) {
   res.render('nodegame.mustache', {node: 'game'});
 });
 app.listen(process.env.PORT || 3000, function() {
-  console.log('Connection Established');
+  console.log('hello cruel javascript world');
 });
 /*
 app.listen(3000, function() {
